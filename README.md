@@ -19,4 +19,5 @@ The tool generates annotations in the following format:
 For each annotated object a ``.txt`` file is created which contains the above line. Once the annotations are generated run ``python concat_txt.py`` with the ``path`` variable pointing to the folder containing the ``.txt`` files. This generates a single ``.txt`` file containing annotations from all the text files in the ``path``.
 
 The final ``Annotation.txt`` file can be used to train the F-RCNN py executing the following line:
+
 ``python train_frcnn -o simple -p Annotation.txt``
